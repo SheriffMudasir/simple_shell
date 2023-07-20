@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <sys/types.h>
-#include <sys/wait.h>
+#include <stdio.h>
 
 int main()
 {
@@ -18,7 +17,6 @@ int main()
 	}
 	else
 	{
-		wait(NULL);
 		sleep(20);
 		printf("I am the FATHER	");
 

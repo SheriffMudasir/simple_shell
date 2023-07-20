@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <sys/types.h>
-#include <sys/wait.h>
+#include <stdio.h>
 
 int main()
 {
@@ -13,15 +12,13 @@ int main()
 	if (val == -1)
 		return (-1);
 	if (val == 0){
-		
+		sleep(10);
 		printf("I am the child");
 	}
 	else
 	{
-		wait(NULL);
-		sleep(20);
-		printf("I am the FATHER	");
-
+		ppid = getppid();
+		printf("The pid of parent is %u", ppid);
 
 	}
 
