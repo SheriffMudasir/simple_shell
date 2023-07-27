@@ -1,6 +1,7 @@
+#include "main.h"
 #include <stdio.h>
 #include <unistd.h>
-#include "main.h"
+
 
 /**
  * execute - This function executes the command
@@ -10,7 +11,7 @@
 
 int execute(char **argv)
 {
-	pid_t pid, wpid;
+	pid_t pid;
 	int status;
 
 	pid = fork();
