@@ -17,6 +17,6 @@ int builtin_command(char **argv);
 int nonbuiltin_command(char **argv);
 int number_token(char *line);
 void free_memory(char *line,char **tokens);
-
+void free_tokens(char **tokens);
 
 #endif
