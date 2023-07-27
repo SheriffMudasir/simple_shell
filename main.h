@@ -16,8 +16,7 @@ int execute(char **argv);
 int builtin_command(char **argv);
 int nonbuiltin_command(char **argv);
 int number_token(char *line);
-void free_mem(char **tokens);
-void free_memory(char *line, **tokens);
+void free_memory(char *line,char **tokens);
 
 
 #endif

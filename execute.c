@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 
 /**
@@ -25,7 +26,7 @@ int execute(char **argv)
 
 	else if (pid < 0)
 	{
-		perror("Failed to fork child process")
+		perror("Failed to fork child process");
 	}
 	else
 	{

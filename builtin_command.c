@@ -11,12 +11,12 @@ extern char **environ;
 int builtin_command(char **argv)
 {
 
-	if (strncmp(argv[0], "exit") == 0)
+	if (strncmp(argv[0], "exit", strlen("exit")) == 0)
 	{
 		return (0);
 	}
 
-	else if (strncmp(argv[0], "env") == 0)
+	else if (strncmp(argv[0], "env", strlen("env")) == 0)
 	{
 		char **env_ptr = environ;
 		while (*env_ptr != NULL)
@@ -27,7 +27,7 @@ int builtin_command(char **argv)
 		return (1);
 
 	}
-	else if (strcmp(argv[0], "cd") == 0)
+	else if (strcmp(argv[0], "cd", strlen("cd")) == 0)
 	{
 		if (argv[1] == NULL)
 		{

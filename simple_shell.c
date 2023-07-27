@@ -15,7 +15,7 @@ int main()
 	size_t buffsize = 1024;
 	int argc;
 	const char *prompt = ":) ";
-	int status;
+	
 
 	while (i)
 	{
