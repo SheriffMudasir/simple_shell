@@ -10,15 +10,6 @@
 
 void free_memory(char *line, char **tokens)
 {
-	int i;
-
 	free(line);
-	if (tokens)
-	{
-		for (i = 0; tokens[i] != NULL; i++)
-		{
-			free(tokens[i]);
-		}
-		free(tokens);
-	}
+	free_tokens(tokens);
 }
