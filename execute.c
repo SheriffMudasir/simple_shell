@@ -8,7 +8,7 @@
  * @argv: The command to be executed
  * Return: 1 if successful
  */
-
+extern char **environ;
 int execute(char **argv)
 {
 	pid_t pid;

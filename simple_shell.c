@@ -53,7 +53,7 @@ int main()
 		if (builtin_command(tokens) == 0)
 		{
 			free_memory(buff, tokens);
-			status = 0;
+			i = 0;
 		}
 		else
 		{
