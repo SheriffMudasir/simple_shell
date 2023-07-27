@@ -33,7 +33,7 @@ int execute(char **argv)
 	{
 		do
 		{
-			wpid = wait(&status);
+			pid = wait(&status);
 
 		} while (!WIFEXITED(status) && ! WIFSIGNALED(status));
 	}
